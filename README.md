@@ -6,8 +6,8 @@ This repository is a Dev Container for Bicep.
 
 | Type | Summary |
 | --- | --- |
-| Base image and tags | ubuntu:latest |
-| Target platform | linux/x64, linux/arm64 |
+| Base image and tags | mcr.microsoft.com/dotnet/sdk:8.0 |
+| Target platform | linux/x64 |
 | Container registry's URL | https://hub.docker.com/r/ryotafunaki/devcontainer-bicep/ |
 | Installed packages | |
 
