@@ -1,15 +1,15 @@
-# Dev Containers Template Repository
+# Bicep Dev Containers Template Repository
 
-This repository is a template for Dev Containers.
+This repository is a Dev Container for Bicep.
 
 ## Overview
 
 | Type | Summary |
 | --- | --- |
-| Base image and tags | base image name |
+| Base image and tags | ubuntu:latest |
 | Target platform | linux/x64, linux/arm64 |
-| Container registry's URL | https://hub.docker.com/r/owner/repository/ |
-| Installed packages | package name |
+| Container registry's URL | https://hub.docker.com/r/ryotafunaki/devcontainer-bicep/ |
+| Installed packages | |
 
 ## How to use
 
