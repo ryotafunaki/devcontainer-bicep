@@ -1,4 +1,4 @@
-# Bicep Dev Containers Template Repository
+# Bicep Dev Containers Repository
 
 This repository is a Dev Container for Bicep.
 
