@@ -4,14 +4,16 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0
 
 # Install dependencies
 RUN apt update && \
-    apt install -y sudo git gnupg2 vim curl lsb-release
+    apt install -y sudo git gnupg2 vim curl lsb-release locales
 
 # Install development tools for root
 ARG USER_NAME=developer
+ARG LOCALE=en_US.UTF-8
 COPY ./shells/root/ ./shells/
 RUN cd ./shells && \
     chmod +x *.sh && \
-    ./create_user.sh ${USER_NAME}  && \
+    ./create_user.sh ${USER_NAME} && \
+    ./setup_locale.sh ${LOCALE} && \
     ./install.sh && \
     cd ..
 RUN rm -rf ./shells
